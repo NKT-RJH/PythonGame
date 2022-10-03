@@ -7,7 +7,7 @@ import ResourceManager as RM
 
 fps = 60
 fpsClock = pygame.time.Clock()
-resolution = [480,640]
+resolution = [960,540]
 screen = pygame.display.set_mode(resolution,RESIZABLE)
 
 Method.Play("My Game")
@@ -19,7 +19,6 @@ while True:
         if event.type == pygame.KEYDOWN:
             screen = Method.SetScreen(event, resolution)
             
-    #screen.fill((255,255,255))
     screen.blit(RM.background, (0,0))
     pygame.display.flip()
     fpsClock.tick(fps)
