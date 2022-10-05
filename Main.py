@@ -20,5 +20,7 @@ while True:
             
             
     screen.blit(RM.background, (0,0))
-    pygame.display.flip()
+    screen.blit(RM.player, (RM.playerX, RM.playerY))
+
     fpsClock.tick(fps)
+    pygame.display.update()
