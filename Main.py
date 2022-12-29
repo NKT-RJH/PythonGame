@@ -7,8 +7,8 @@ import ResourceManager as RM
 
 fps = 60
 fpsClock = pygame.time.Clock()
-resolution = [1920,1080]
-screen = pygame.display.set_mode(resolution,FULLSCREEN)
+resolution = [1280,720]
+screen = pygame.display.set_mode(resolution,RESIZABLE)
 
 Method.Play("My Game")
 
